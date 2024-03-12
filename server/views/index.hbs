@@ -1,0 +1,45 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KIOSK</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+  </head>
+
+  <body>
+    <main>
+      <aside>
+        <a href="?index={{prevIndex}}"><button>PREV</button></a>
+        <a href="?index={{nextIndex}}"><button>NEXT</button></a>
+      </aside>
+      <div class="player-container">
+        <div class="player-container-row">
+          <div
+            class="media"
+            style="background-image: url(/media/{{mediaSrc}});"
+          ></div>
+        </div>
+        <div class="player-container-row">
+          <div
+            class="media"
+            style="background-image: url(/media/{{mediaSrc}});"
+          ></div>
+          <div
+            class="media"
+            style="background-image: url(/media/{{mediaSrc}});"
+          ></div>
+        </div>
+        <div class="player-container-row">
+          <div
+            class="media"
+            style="background-image: url(/media/{{mediaSrc}});"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+
+</html>

@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  background-color: black;
+  max-height: 100vh;
+}
+
+main {
+  width: 800px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 180px 620px;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+}
+
+aside a {
+  display: flex;
+
+  text-decoration: none;
+}
+
+aside a button {
+  height: 100%;
+  width: 100%;
+
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+.player-container {
+  border-left: solid 1px black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.player-container .media {
+  width: 140px;
+  height: 140px;
+
+  background-size: cover;
+  background-position: center center;
+}
+
+.player-container .player-container-row {
+  display: flex;
+  justify-content: center;
+}
+
+.player-container .player-container-row:nth-child(2) {
+  gap: 60px;
+}
+
+.player-container .player-container-row:nth-child(1) .media {
+  transform: rotate(180deg);
+}
+
+.player-container .player-container-row:nth-child(2) .media:first-child {
+  transform: rotate(90deg);
+}
+
+.player-container .player-container-row:nth-child(2) .media:last-child {
+  transform: rotate(270deg);
+}

@@ -1,0 +1,21 @@
+{
+  "name": "kiosk-app-player",
+  "version": "1.0.0",
+  "description": "kiosk app",
+  "main": "server/index.js",
+  "author": "Lukas Caldr",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-hbs": "^1.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "koa-logger": "^3.2.0"
+  },
+  "engines": {
+    "node": "16.15.0"
+  }
+}
