@@ -50,6 +50,12 @@ aside a button {
   background-position: center center;
 }
 
+.player-container .media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .player-container .player-container-row {
   display: flex;
   justify-content: center;

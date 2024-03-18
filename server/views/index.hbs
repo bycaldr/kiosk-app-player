@@ -18,24 +18,46 @@
         <div class="player-container-row">
           <div
             class="media"
-            style="background-image: url(/media/{{mediaSrc}});"
-          ></div>
+            {{#if image }}style="background-image: url(/media/{{mediaSrc}});"{{/if}}
+          >
+            {{#if video}}
+              <video autoplay loop muted>
+                <source src="/media/{{mediaSrc}}" type="video/mp4" />
+              </video>
+            {{/if}}
+          </div>
         </div>
         <div class="player-container-row">
           <div
             class="media"
-            style="background-image: url(/media/{{mediaSrc}});"
-          ></div>
+            {{#if image }}style="background-image: url(/media/{{mediaSrc}});"{{/if}}
+          >
+          {{#if video}}
+              <video autoplay loop muted>
+                <source src="/media/{{mediaSrc}}" type="video/mp4" />
+              </video>
+            {{/if}}
+            </div>
           <div
             class="media"
-            style="background-image: url(/media/{{mediaSrc}});"
-          ></div>
+            {{#if image }}style="background-image: url(/media/{{mediaSrc}});"{{/if}}
+          >
+          {{#if video}}
+              <video autoplay loop muted>
+                <source src="/media/{{mediaSrc}}" type="video/mp4" />
+              </video>
+            {{/if}}</div>
         </div>
         <div class="player-container-row">
           <div
             class="media"
-            style="background-image: url(/media/{{mediaSrc}});"
-          ></div>
+            {{#if image }}style="background-image: url(/media/{{mediaSrc}});"{{/if}}
+          >
+          {{#if video}}
+              <video autoplay loop muted>
+                <source src="/media/{{mediaSrc}}" type="video/mp4" />
+              </video>
+            {{/if}}</div>
         </div>
       </div>
     </main>

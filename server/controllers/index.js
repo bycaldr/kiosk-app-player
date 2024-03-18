@@ -3,14 +3,20 @@ const Router = require("koa-router");
 const router = new Router();
 
 const media = [{
-  type: 'image',
+  image: true,
   src: 'moon.jpg'
 }, {
-  type: 'image',
+  image: true,
   src: 'fire.jpg'
 }, {
-  type: 'image',
+  image: true,
   src: 'lighter.jpg'
+}, {
+  video: true,
+  src: 'jellyfish1.mp4'
+}, {
+  video: true,
+  src: 'jellyfish2.mp4'
 }]
 
 router.get("/", async (ctx) => {
@@ -29,7 +35,8 @@ router.get("/", async (ctx) => {
   if (nextIndex > media.length - 1) nextIndex = 0;
 
   await ctx.render("index", {
-    type: selectedMedia.type,
+    image: selectedMedia.image,
+    video: selectedMedia.video,
     mediaSrc: selectedMedia.src,
     prevIndex,
     nextIndex,
